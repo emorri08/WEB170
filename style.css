@@ -1,0 +1,43 @@
+/* Elly Boyd - WEB170 - Template Styles */
+/* style.css */
+
+    section {
+        float:right;
+        width:62%;
+        background-color:#fff;
+        padding:.5em;
+    }
+    
+    aside {
+        float:left;
+        width:33%;
+        background-color:#fff;
+        padding:.5em;
+    }
+
+    footer {
+        clear:both;
+    }
+
+p.copy {
+    text-align: center;
+}
+    
+/* Larger Screen Styles */
+@media all and (min-width:1280px) {
+    
+    section {
+        float:right;
+        width:62%;
+        background-color:#fff;
+        padding:.5em;
+    }
+    
+    aside {
+        float:left;
+        width:33%;
+        background-color:#fff;
+        padding:.5em;
+    }
+    
+}
