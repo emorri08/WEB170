@@ -1,18 +1,22 @@
 /* Elly Boyd - WEB170 - Template Styles */
 /* style.css */
 
-    section {
-        float:right;
-        width:62%;
+   #left {
+        float:left;
+        width:60%;
         background-color:#fff;
-        padding:.5em;
+        padding:25px;
+       margin:.5em;
+       text-align:justify;
     }
     
-    aside {
-        float:left;
-        width:33%;
+    #right {
+        float:right;
+        width:25%;
         background-color:#fff;
-        padding:.5em;
+        padding:25px;
+        margin:.5em;
+        text-align:justify;
     }
 
     footer {
