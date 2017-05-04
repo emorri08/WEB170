@@ -8,7 +8,7 @@
        text-align:justify;
        padding:20px;
        margin-left:10px;
-       border:groove 5px #90726a;
+       border:double 5px #8a0000;
        margin-bottom:20px;
        border-radius:10px;
     }
@@ -20,14 +20,14 @@
         text-align:justify;
         padding:20px;
         margin-right:10px;
-        border:groove 5px #90726a;
+        border:double 5px #8a0000;
         margin-bottom:20px;
         border-radius:10px;
     }
 
     #main-nav {
         background-color:#d5dfe3;
-        border:groove 5px #d16a9a;
+        border:double 5px #00641e;
         padding:20px;
         margin-right:10px;
         margin-left:10px;
@@ -38,7 +38,7 @@
 
     #secondary-nav {
         background-color:#d5dfe3;
-        border:groove 5px #d16a9a;
+        border:double 5px #00641e;
         padding:20px;
         margin-right:10px;
         margin-left:10px;
@@ -48,7 +48,7 @@
 }
 
     #buttons {
-        color:#d5dfe3;
+        color:#fff;
         list-style-type:none;
 }
 
@@ -62,8 +62,18 @@
         margin-left:10px;
         padding:25px;
         background-color:#d5dfe3;
-        border:groove 5px #977c74;
+        border:double 5px #8a0000;
         border-radius:10px;
+}
+
+    h1 a {
+        color:#400000;
+}
+
+    h1 a:hover {
+        color:#073824;
+        text-decoration:line-through;
+        text-decoration-color:#d5dfe3;
 }
 
     h2 {
@@ -71,7 +81,7 @@
         margin-left:10px;
         padding:20px;
         background-color:#d5dfe3;
-        border:groove 5px #977c74;
+        border:double 5px #00641e;
         border-radius:10px;
 }
 
@@ -79,14 +89,14 @@
         width:80px;
         padding:10px;
         margin:20px;
-        background-color:#e29ac9;
+        background-color:#8e9e40;
         color:#d16a9a;
-        border:groove 7.5px #d16a9a;
+        border:double 7.5px #00641e;
         border-radius:5px;
 }
 
     a {
-        color:white;
+        color:a80000;
         text-decoration:none;
 }
     a.nav {
