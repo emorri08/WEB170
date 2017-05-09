@@ -16,35 +16,37 @@
         <header>
             <img id="morrison" src="<?php bloginfo('template_directory'); ?>/images/morrison01.svg" height="150px" alt="the morrisons"/>
  <!--           <h1>The Morrisons</h1>  -->
-            <h2>Family Photo Gallery &amp; Blog</h2>
+                <h2>Family Photo Gallery &amp; Blog</h2>
 <!--begin navigation-->
+            <div id="navigation">
                 <nav id="top-nav">
                     <ul id="main-nav">
-                        <li>
+                        <li class="navigation">
                             <a class="nav" href="index.php">Home</a>
                         </li>
-                        <li>
+                        <li class="navigation">
                             <a class="nav" href="about">About</a>
-                                <ul>
-                                    <li>
-                                        <a class="nav" href="about/sub-page-one">Sub-page One</a>
+                                <ul id="sub-nav">
+                                    <li class="sub-navigation">
+                                        <a class="sub-nav" href="about/sub-page-one">Sub-page One</a>
                                     </li>
-                                    <li>
-                                        <a class="nav" href="about/sub-page-two">Sub-page Two</a>
+                                    <li class="sub-navigation">
+                                        <a class="sub-nav" href="about/sub-page-two">Sub-page Two</a>
                                     </li>
-                                    <li>
-                                        <a class="nav" href="about/sub-page-three">Sub-page Three</a>
+                                    <li class="sub-navigation">
+                                        <a class="sub-nav" href="about/sub-page-three">Sub-page Three</a>
                                     </li>
                                 </ul>
                         </li>
-                        <li>
+                        <li class="navigation">
                             <a class="nav" href="blog">Blog</a>
                         </li>
-                        <li>
+                        <li class="navigation">
                             <a class="nav" href="contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
+            </div>
 <!--end navigation-->
         </header>
 <!-- cut here for php includes header -->
