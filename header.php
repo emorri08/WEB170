@@ -17,12 +17,16 @@
             <img id="morrison" src="<?php bloginfo('template_directory'); ?>/images/morrison01.svg" height="150px" alt="the morrisons"/>
  <!--           <h1>The Morrisons</h1>  -->
                 <h2>Family Photo Gallery &amp; Blog</h2>
+
 <!--begin navigation-->
-            <div id="navigation">
-                <nav id="top-nav">
-                    <ul id="main-nav">
+    <!--          
+                <div id="navigation">
+                <ul id="main-nav">
                         <li class="navigation">
-                            <a class="nav" href="index.php">Home</a>
+                            <a class="nav" href="home">Home</a>
+                        </li>
+                        <li class="navigation">
+                            <a class="nav" href="blog">Blog</a>
                         </li>
                         <li class="navigation">
                             <a class="nav" href="about">About</a>
@@ -39,14 +43,15 @@
                                 </ul>
                         </li>
                         <li class="navigation">
-                            <a class="nav" href="blog">Blog</a>
-                        </li>
-                        <li class="navigation">
                             <a class="nav" href="contact">Contact</a>
                         </li>
-                    </ul>
-                </nav>
-            </div>
+                    </ul>   
+                </div>-->
+
 <!--end navigation-->
+<?php wp_nav_menu(array('theme_location' => 'main-menu', 'menu' => 'main-menu', 'menu_class' => 'menu')); ?>
+    
+    
+    
         </header>
 <!-- cut here for php includes header -->
