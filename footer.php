@@ -1,8 +1,8 @@
 <!-- cut here for php includes footer -->
     <footer>
+        <!-- begin footer navigation -->
         <div id="sub-menu" class="widget">
             <h2 class="sub-menu-title"><?php echo get_the_title($post->post_parent);#gets the title of the gateway page ?></h2>
-    <!-- begin side bar navigation -->
                 <ul class="sub-navigation-items"><?php
                     if ($post->post_parent) {
                         wp_list_pages(array('child_of' => $post->post_parent, 'title_li' => __('')));#if there is a parent page, list the sub pages
@@ -21,8 +21,15 @@
                         <a class="sub-foot-nav" href="about/sub-page-three">Sub-page Three</a>
                     </li> end commented out sub navigation-->
                 </ul>
-    <!-- end side bar navigation -->
+    
+            
+            
+            <?php if(!(is_page())) :#if not in pages ?>
+            <h2 class="sub-menu-title">Blog</h2>
+            <ul class="sub-menu-items"><?php wp_list_categories(array('title_li' => __(''))); ?></ul>
+            <?php endif; ?>
 </div>
+<!-- end footer navigation -->
             <p class="copy">
                 <small>&copy;<?php echo date('Y'); ?> E. Boyd, <a href="http://3tabbies.com" target="_blank">3 Tabbies</a>, All Rights Reserved. </small>
             </p>

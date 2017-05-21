@@ -90,6 +90,12 @@ ul.sub-menu {
 }
 
 /* END TOP-NAV */
+
+/* Begin Footer Nav */
+    #sub-menu ul.sub-navigation-items li a {
+        display:inline;
+}
+
 /* END NAVIGATION STYLES */
 
     h1 {
@@ -136,6 +142,8 @@ ul.sub-menu {
 }
 
     footer {
+        width:60%;
+        margin:auto;
         clear:both;
     }
 
