@@ -25,7 +25,20 @@
         border-radius:10px;
     }
 
+    header {
+        width:60%;
+        margin:auto;
+}
 
+    .menu-main-menu-container {
+        width:60%;
+        margin:auto;
+}
+
+    #content {
+        width:60%;
+        margin:auto;
+}
 
     #buttons {
         color:#fff;
