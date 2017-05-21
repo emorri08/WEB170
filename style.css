@@ -90,103 +90,6 @@ ul.sub-menu {
 }
 
 /* END TOP-NAV */
-
-/* SECONDARY-NAV */
-    #secondary-nav {
-        list-style:none;
-        font-weight:bold:
-        margin-bottom:10px;
-        float:left;
-        width:100%;
-}
-
-    #secondary-nav li {
-        float:left;
-        margin-right:10px;
-        position:relative;
-}
-
-    #secondary-nav a {
-        display:block;
-        padding:5px;
-        color:#fff;
-        background-color:#000;
-        text-decoration:none;
-}
-
-    #secondary-nav a:hover {
-        color:white;
-        background-color:#073824;
-        text-decoration:underline;
-}
-
-        /* foot-nav drop down styles*/
-    #secondary-nav ul {
-        background-color:#fff;
-        background:rgba(255,255,255,0);
-        list-style:none;
-        position:absolute;
-        left:-9999px;
-}
-
-    #secondary-nav ul li {
-        padding-top:1px;
-        float:none;
-}
-
-    #secondary-nav ul a {
-        white-space:nowrap;
-}
-
-    #secondary-nav li:hover ul {
-        left:0;
-}
-
-    #secondary-nav li:hover a {
-        background-color:#073824;
-        text-decoration:underline;
-}
-
-    #secondary-nav li:hover ul a {
-        text-decoration:none;
-}
-
-    #secondary-nav  li:hover u li a:hover {
-        background-color:#000;
-}
-
-        /* foot-nav nested lists */
-    #secondary-nav ul {
-        background-color:#fff;
-        background:rgba(255,255,255,0);
-        list-style:none;
-        position:absolute;
-        left:-9999px;
-}
-
-    #secondary-nav ul li {
-        padding-top:1px;
-        float:none;
-}
-
-    #secondary-nav ul a {
-        white-space:nowrap;
-}
-
-    #secondary-nav li:hover ul {
-        left:0;
-}
-
-    #secondary-nav li:hover a {
-        background-color:#073824;
-        text-decoration:underline;
-}
-
-    #secondary-nav li:hover ul li a:hover {
-        background-color:#000;
-}
-/* END FOOT-NAV */
-
 /* END NAVIGATION STYLES */
 
     h1 {
@@ -262,7 +165,7 @@ ul.sub-menu {
 
 /* Smaller Screen Styles */
 
-@media all and (max-width:899px) {
+@media all and (max-width:800px) {
     
     #left {
         float:none;
@@ -281,4 +184,10 @@ ul.sub-menu {
         border:none;
         padding:1em;
     }
+    
+/* Begin Nav Styles for smaller Screens */
+    ul.sub-menu {
+        display:block;
+}
+    
 }
