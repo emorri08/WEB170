@@ -72,79 +72,13 @@ ul.sub-menu {
         display:none;
 }
 
-        /* top-nav drop down styles*/
- /*   .menu ul {
-        background-color:#fff;
-        background:rgba(255,255,255,0);
-        list-style:none;
-        position:absolute;
-        left:-9999px;
-}
-
-    .menu ul li {
-        padding-top:1px;
-        float:none;
-}
-
-    .menu ul a {
-        white-space:nowrap;
-}
-
-    .menu li:hover ul {
-        left:0;
-}
-
-    .menu li:hover a {
-        background-color:#000;
-        text-decoration:underline;
-}
-
-    .menu li:hover ul a {
-        text-decoration:none;
-}
-
-    .menu  li:hover u li a:hover {
-        background-color:#000;
-}*/
-
-        /* top-nav nested lists */
-   /* .menu ul {
-        background-color:#fff;
-        background:rgba(255,255,255,0);
-        list-style:none;
-        position:absolute;
-        left:-9999px;
-}
-
-    .menu ul li {
-        padding-top:1px;
-        float:none;
-}
-
-    .menu ul a {
-        white-space:nowrap;
-}
-
-    .menu li:hover ul {
-        left:0;
-}
-
-    .menu li:hover a {
-        background-color:#073824;
-        text-decoration:underline;
-}
-
-    .menu li:hover ul li a:hover {
-        background-color:#000;
-}*/
-
 .menu li.current-menu-item a {
     color:#f00;
 }
 
 /* END TOP-NAV */
 
-/* FOOT-NAV */
+/* SECONDARY-NAV */
     #secondary-nav {
         list-style:none;
         font-weight:bold:
