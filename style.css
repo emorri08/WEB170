@@ -68,8 +68,12 @@
         text-decoration:underline;
 }
 
+ul.sub-menu {
+        display:none;
+}
+
         /* top-nav drop down styles*/
-    .menu ul {
+ /*   .menu ul {
         background-color:#fff;
         background:rgba(255,255,255,0);
         list-style:none;
@@ -101,10 +105,10 @@
 
     .menu  li:hover u li a:hover {
         background-color:#000;
-}
+}*/
 
         /* top-nav nested lists */
-    .menu ul {
+   /* .menu ul {
         background-color:#fff;
         background:rgba(255,255,255,0);
         list-style:none;
@@ -132,7 +136,12 @@
 
     .menu li:hover ul li a:hover {
         background-color:#000;
+}*/
+
+.menu li.current-menu-item a {
+    color:#f00;
 }
+
 /* END TOP-NAV */
 
 /* FOOT-NAV */
