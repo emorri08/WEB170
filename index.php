@@ -20,4 +20,4 @@
 </div>
 <!-- end index.php page content here -->
 
-<?php get_footer(); ?php>
+<?php get_footer(); ?>
