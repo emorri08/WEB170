@@ -3,7 +3,6 @@
 <!-- start index.php page content here -->
 <div id="content">
 <h2><?php if(is_category()){single_cat_title();} else {single_post_title();} ?></h2>
-<p><?php get_seo(); ?></p>
 <?php while(have_posts()) : the_post(); ?>
 <article class="blog-excerpt">
     <h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink(); ?>" rel="bookmark" title="PermanentLink to <?php the_title(); ?>"><?php the_title(); ?>&nbsp;&raquo;</a></h3>
