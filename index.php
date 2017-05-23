@@ -1,10 +1,23 @@
-<?php get_header(); #get header.php ?>
-    <div id="content" class="page">
-        
-<?php if ( have_posts()) : while ( have_posts()) : the_post(); ?>
-        <?php get_sidebar(); #get sidebar.php ?>
-        <h2><a href="<?php the_permalink();?><?php the_title(); ?>"></a></h2>
-<?php the_content(''); ?>        
-<?php endwhile; endif; ?>
-    </div>
-<?php get_footer(); #get footer.php?>
+<?php get_header() ?>
+
+<!-- start index.php page content here -->
+<div id="content">
+<h2><?php if(is_category()){single_cat_title();} else {single_post_title();} ?></h2>
+<p><?php get_seo(); ?></p>
+<?php while(have_posts()) : the_post(); ?>
+<article class="blog-excerpt">
+    <h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink(); ?>" rel="bookmark" title="PermanentLink to <?php the_title(); ?>"><?php the_title(); ?>&nbsp;&raquo;</a></h3>
+    <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php echo get_the_post_thumbnail($page->ID,'thumbnail'); ?></a>
+    
+    <p><?php echo get_the_excerpt(); ?><a href="<?php the_permalink() ?>" class="more" rel="bookmark" title="Permanaent Link to <?php the_title(); ?>">Full Story&nbsp;&raquo;</a></p>
+    <small>Posted on<?php the_time('F jS, Y') ?> in <?php the_category(', ') ?></small>
+</article>
+<?php endwhile; ?>
+    <ul class="sub-menu">
+        <li class="post-navigation-previous"><?php previous_posts_link('&laquo;&nbsp;Newer') ?></li>
+        <li class="post-navigation-next"><?php next_posts_link('Older&nbsp;&raquo;'); ?></li>
+    </ul>
+</div>
+<!-- end index.php page content here -->
+
+<?php get_footer(); ?php>

@@ -1,9 +1,19 @@
-<?php get_header(); #get header.php ?>
-    <div id="content" class="page">
-<?php if ( have_posts()) : while ( have_posts()) : the_post(); ?>
-        
-        <h2><a href="<?php the_permalink();?><?php the_title(); ?>"></a></h2>
-<?php the_content(''); ?>        
-<?php endwhile; endif; ?>
-    </div>
-<?php get_footer(); #get footer.php?>
+<?php get_header(); ?>
+
+<!-- begin content of page.php -->
+<div id="content" class="page">
+    
+<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+    
+<article id="page-content-<?php the_ID(); ?>" class="page-content">
+    <h2><?php the_title(); ?></h2>
+    
+    <?php get_gateway_spotlights(); ?>
+<?php the_content(''); ?>    
+</article>
+    <?php endwhile; endif; ?>
+    <?php get_child_pages(); ?>
+</div>
+<!-- end content of page.php -->
+
+<?php get_footer(); ?>
