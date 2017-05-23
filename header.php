@@ -3,10 +3,17 @@
 <html lang="en">
     <head><!-- Oh everything's cruel according to you. Keeping him chained us in the backyard is cruel. Pulling his tail is cruel. Yelling in his ears is cruel. Everything is cruel. So excuse me if I'm cruel. -Homer Simpson-->
         <meta charset="utf-8" />
+<!--
+Theme Name: boyd-sp17-web170
+Description: Created in the process of learning how to create Wordpress themes
+Author: E. Boyd
+http://eleanorboyd.com
+-->
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <meta name="viewport" content="width=device-width" />
         <meta name="robots" content="noindex,nofollow" />
-                <title><?php bloginfo('description'); ?><?php bloginfo('name'); ?></title>
+        <meta name="keywords" content="Morrison Family Blog and Photo Gallery" />
+                <title><?=$title?></title>
             <script src="script.js"></script>
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all"/>
         <?php wp_head(); ?>

@@ -6,7 +6,10 @@
     <article id="post-<?php the_ID(); ?>" class="post">
         <h2><?php the_title(); ?></h2>
         <p><small>Posted on <?php the_time('F jS, Y') ?> in <?php the_category(', ') ?></small></p>
-        <?php get_featured_image_with_link(); ?>
+   <!-- needs troubleshooting...with this tag, returns an error     
+< ?php get_featured_image_with_link(); ?>
+without tag, shows blog post 
+-->
         
         <?php the_content('') ?>
         

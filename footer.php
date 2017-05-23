@@ -1,4 +1,5 @@
 <!-- cut here for php includes footer -->
+
     <footer>
         <!-- begin footer navigation -->
         <div id="sub-menu" class="widget">
