@@ -19,4 +19,6 @@
 </div>
 <!-- end index.php page content here -->
 
+<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
