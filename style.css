@@ -1,17 +1,9 @@
-/* Elly Boyd - WEB170 - Template Styles */
-/* style.css */
+/* Theme Name: boyd-sp17-web170
+Description: Created in the process of learning how to create Wordpress themes
+Author: E. Boyd
+http://eleanorboyd.com */
 
-   #left {
-       float:left;
-       width:55%;
-       background-color:#d5dfe3;
-       text-align:justify;
-       padding:20px;
-       margin-left:10px;
-       border:double 5px #8a0000;
-       margin-bottom:20px;
-       border-radius:10px;
-    }
+/* style.css */
     
     #sidebar {
         float:right;
@@ -26,8 +18,25 @@
     }
 
     header {
-        width:85%;
+        width:100%;
         margin:auto;
+}
+
+    #page-content-26{
+        width:100%;
+}
+
+    article {
+        width:100%;
+}
+
+    img.bannerImage {
+        width:87%;
+        height:auto;
+        border:5px ridge chartreuse;
+        margin-left:30px;
+        margin-top:10px;
+        margin-bottom:10px;
 }
 
     .menu-main-menu-container {
@@ -36,7 +45,7 @@
 }
 
     #content {
-        width:85%;
+        width:100%;
         margin:auto;
 }
 
@@ -81,12 +90,12 @@
         text-decoration:underline;
 }
 
-ul.sub-menu {
+    ul.sub-menu {
         display:none;
 }
 
-.menu li.current-menu-item a {
-    color:#f00;
+    .menu li.current-menu-item a {
+        color:#f00;
 }
 
 /* END TOP-NAV */
@@ -99,7 +108,7 @@ ul.sub-menu {
 /* END NAVIGATION STYLES */
 
     h1 {
-        width:85%;
+        width:84.5%;
         margin-left:10px;
         padding:25px;
         background-color:#d5dfe3;
@@ -118,7 +127,7 @@ ul.sub-menu {
 }
 
     h2 {
-        width:85%;
+        width:85.75%;
         margin-left:10px;
         padding:20px;
         background-color:#d5dfe3;
@@ -128,6 +137,30 @@ ul.sub-menu {
 
     h2.sub-menu-title {
         
+}
+
+    p {
+        margin-right:80px;
+        margin-left:25;
+}
+
+    ol {
+        margin-left:20px;
+        padding:20px;
+}
+
+    li {
+        padding:5px;
+        margin-left:20px;
+}
+
+    blockquote p {
+        width:300px;
+        height:auto;
+        border:1px solid grey;
+        box-shadow:2px 2px 6px grey;
+        padding:10px;
+        margin:10px;
 }
 
     .buttons {

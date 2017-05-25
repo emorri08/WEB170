@@ -1,17 +1,10 @@
 <?php get_header(); ?>
-
-<!-- begin content of page.php -->
-<div id="content" class="page">
-    
-<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-    
-<article id="page-content-<?php the_ID(); ?>" class="page-content">
-    <h2><?php the_title(); ?></h2>
-    
-<?php the_content(''); ?>    
-</article>
-    <?php endwhile; endif; ?>
+<div id="content">
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post();    //loop starting point ?>
+    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <?php the_content(); ?>
+    <?php endwhile; endif;  //this is the end, my friend. ?>
+    <small>page.php</small>
 </div>
-<!-- end content of page.php -->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
