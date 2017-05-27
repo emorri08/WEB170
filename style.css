@@ -4,6 +4,12 @@ Author: E. Boyd
 http://eleanorboyd.com */
 
 /* style.css */
+
+/* css reset */
+* {
+    padding:0px;
+    margin:0px;
+}
     
     #sidebar {
         float:right;
@@ -16,6 +22,11 @@ http://eleanorboyd.com */
         margin-bottom:20px;
         border-radius:10px;
     }
+
+#morrison {
+    margin-left:35%;
+    margin-bottom:50px;
+}
 
     header {
         width:100%;
@@ -31,10 +42,11 @@ http://eleanorboyd.com */
 }
 
     img.bannerImage {
-        width:87%;
+        width:100%;
         height:auto;
-        border:5px ridge chartreuse;
-        margin-left:30px;
+        border-top:10px solid red;
+        border-bottom:10px solid red;
+        margin-left:0px;
         margin-top:10px;
         margin-bottom:10px;
 }
@@ -64,16 +76,17 @@ http://eleanorboyd.com */
 /* TOP-NAV */
     .menu {
         list-style:none;
-        font-weight:bold:
+        position:relative;
         margin-bottom:10px;
-        float:left;
-        width:100%;
 }
 
     .menu li {
-        float:left;
-        margin-right:10px;
+        float:right;
         position:relative;
+        background-color:black;
+        padding:5px 40px;
+        border-radius:25px;
+        margin:20px;
 }
 
     .menu a {
@@ -82,12 +95,16 @@ http://eleanorboyd.com */
         color:white;
         background-color:#000;
         text-decoration:none;
+        font-size:20px;
+        font-family:'arial', sans-serif;
+        font-variant:small-caps;
 }
 
     .menu a:hover {
-        color:white;
-        background-color:#000;
+        color:darkmagenta;
+        background-color:chartreuse;
         text-decoration:underline;
+        text-decoration-color:cornflowerblue;
 }
 
     ul.sub-menu {
@@ -107,13 +124,17 @@ http://eleanorboyd.com */
 
 /* END NAVIGATION STYLES */
 
+    #middle {
+    
+}
+
     h1 {
         width:84.5%;
         margin-left:10px;
         padding:25px;
         background-color:#d5dfe3;
         border:double 5px #8a0000;
-        border-radius:10px;
+        border-radius:55px;
 }
 
     h1 a {
@@ -124,24 +145,70 @@ http://eleanorboyd.com */
         color:#073824;
         text-decoration:line-through;
         text-decoration-color:#d5dfe3;
+        
 }
 
     h2 {
-        width:85.75%;
         margin-left:10px;
         padding:20px;
         background-color:#d5dfe3;
         border:double 5px #00641e;
-        border-radius:10px;
+        border-radius:55px;
 }
 
-    h2.sub-menu-title {
-        
+h2.sub-navigation-title {
+    margin:0px 20% 75px 25%;
+}
+
+h2.sub-menu-title {
+    margin-left:10%;
+    margin-right:5%;
+    padding-left:37%;
+}
+
+    #mainHeadline {
+        width:445px;
+        margin-left:35%;
+        margin-bottom:50px;
+        padding:30px;
+        font-size:32px;
+        font-family:'arial', sans-serif;
+        font-weight:normal;
+        font-variant:small-caps;
+        font-style:oblique;
+        text-decoration:line-through;
+        text-decoration-color:red;
+        text-decoration-style:dotted;
+}
+
+    #headline {
+        display:none;
+}
+
+    #rightMainContent {
+        clear:both;
+        padding:7px 15px;
+        margin:125px 40% 5px 26%;
+        background-color:#d5dfe3;
+        color:black;
+        width:285px;
+        border-radius:20px;
+        border:double 3px red;
 }
 
     p {
         margin-right:80px;
         margin-left:25;
+}
+
+    p.rightMain {
+        margin:10px 20% 10px 25%;
+        padding:20px;
+        text-align:justify;
+        font-family:'arial', sans-serif;
+        font-size:16px;
+        font-weight:normal;
+        color:black;
 }
 
     ol {
@@ -150,8 +217,11 @@ http://eleanorboyd.com */
 }
 
     li {
-        padding:5px;
-        margin-left:20px;
+        background-color:black;
+        padding-left:50px;
+        padding-right:40px;
+        padding-top:5px;
+        padding-bottom:5px;
 }
 
     blockquote p {
@@ -205,18 +275,11 @@ http://eleanorboyd.com */
         text-align:center;
 }
     
-/* Larger Screen Styles */
+/* Responsive Styles */
 
 @media all and (min-width:900px) {
     
-    #left {
-        float:left;
-        width:55%;
-        background-color:#d5dfe3;
-        margin-right:20px;
-    }
-    
-    #right {
+    #sidebar {
         float:right;
         width:25%;
         background-color:#d5dfe3;
@@ -225,20 +288,33 @@ http://eleanorboyd.com */
     
 }
 
-/* Smaller Screen Styles */
+@media all and /*(min-width:1025px) and*/ (max-width:1290px){
+    
+    li {
+        padding-left:20px;
+        padding-right:20px;
+    }
+}
+
+@media all and /*(min-width:900px) and */(max-width:1024px){
+    
+    li {
+        padding:2px 10px 2px 10px;
+    }
+}
+
+@media all and (max-width:899px){
+    #menu-item-43,
+    #menu-item-44,
+    #menu-item-42,
+    #menu-item-92 {
+        width:100%;
+    }
+}
 
 @media all and (max-width:800px) {
     
-    #left {
-        float:none;
-        width:95%;
-        background-color:#d5dfe3;
-        margin:auto;
-        border:none;
-        padding:1em;
-    }
-    
-    #right {
+    #sidebar {
         float:none;
         width:95%;
         background-color:#d5dfe3;

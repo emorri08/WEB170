@@ -14,6 +14,7 @@ http://eleanorboyd.com
         <meta name="robots" content="noindex,nofollow" />
         <meta name="keywords" content="Morrison Family Blog and Photo Gallery" />
                 <title><?=$title?></title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="script.js"></script>
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all"/>
         <?php wp_head(); ?>
@@ -23,7 +24,7 @@ http://eleanorboyd.com
         <header>
             <img id="morrison" src="<?php bloginfo('template_directory'); ?>/images/morrison01.svg" height="150px" alt="the morrisons"/>
  <!--           <h1>The Morrisons</h1>  -->
-                <h2>Family Photo Gallery &amp; Blog</h2>
+                <h2 id="mainHeadline" class="headline">Family Photo Gallery &amp; Blog</h2>
 
 <!--begin navigation-->
     <!--          
