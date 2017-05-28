@@ -57,6 +57,44 @@ html {
     text-align:justify;
 }
 
+#content article.post-excerpt {
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+/* featured image styles */
+
+#content img.featured {
+    margin-bottom:10px;
+}
+
+/* end featured image styles */
+
+/* thumbnail image styles */
+
+#content img.wp-post-image {
+    
+}
+
+#content img.attachment-thumbnail {
+    float:left;
+    margin:5px 20px 0px 0px;
+}
+
+#content img.attachment-medium {
+    
+}
+
+#content img.attachment-large {
+    
+}
+
+#content img.attachment-full {
+    
+}
+
+/* end thumbnail styles */
+
 blockquote {
     width:500px;
     height:auto;
