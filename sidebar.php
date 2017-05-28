@@ -1,15 +1,23 @@
 <!-- SIDEBAR.PHP -->
 <aside>
-    
+    <div id="sidebar">    
 <!--SUB MENU -->
-    <div id="sub-navigation" class="widget">
+        <div id="sub-navigation" class="widget">
         
-        <h2 class="sub-navigation-title"><?php echo $parentname; ?></h2>
+            <h2 class="sub-navigation-title"><?php echo $parentname; ?></h2>
     
-        <ul class="sub-navigation-items">
-            <?php echo $children; ?>    
-        </ul>
-    </div>
+                <ul class="sub-navigation-items">
+                    <?php echo $children; ?>    
+                </ul>
+        </div>
 <!-- END SUB MENU -->
+<!-- quote -->
 
+<?php if (get_post_meta($post->ID, 'Quote', true)) : #this checks to see if there is a quote ?>
+
+<blockquote><?php echo get_post_meta($post->ID, 'Quote', true); ?></blockquote>
+
+<?php endif; ?>
+<!-- end quote -->
+    </div>
 </aside>

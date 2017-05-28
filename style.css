@@ -26,10 +26,25 @@ html {
     font-family:'arial', sans-serif;
 }
 
+#sidebar {
+    background-color:white;
+    width:700px;
+    padding:50px;
+    margin:auto;
+    margin-bottom:50px;
+    border-radius:40px;
+    font-family:'arial', sans-serif;
+}
+
 #mainHeadline {
     margin:10px 25px;
     font-family:'arial', sans-serif;
     text-align:center;
+}
+
+#headline {
+    margin:30px;
+    padding:25px 20px 5px 20px;
 }
 
 #mainContent {
@@ -61,6 +76,24 @@ html {
     overflow:hidden;
     margin-bottom:20px;
 }
+
+#name {
+    margin:10px 25px;
+}
+
+#select-choice {
+    margin:10px 20px;
+}
+
+#textarea {
+    margin:10px 20px;
+}
+
+#checkbox {
+    margin:10px 30px;
+}
+
+
 
 /* featured image styles */
 
@@ -95,6 +128,48 @@ html {
 
 /* end thumbnail styles */
 
+img.bannerImage {
+    width:100%;
+    margin-top:50px;
+}
+
+img.banner {
+    width:100%;
+}
+
+h1 {
+    padding:20px;
+}
+
+h2 {
+    padding:20px;
+}
+
+h3 {
+    padding:20px;
+}
+
+h4 {
+    padding:5px 10px;
+    margin-left:20px;
+}
+
+p {
+    padding:20px;
+}
+
+ol {
+    padding:5px 50px;
+}
+
+ul {
+    padding:5px 50px;
+}
+
+li {
+    padding:5px 20px;
+}
+
 blockquote {
     width:500px;
     height:auto;
@@ -104,6 +179,24 @@ blockquote {
     margin:auto;
     font-family:'arial', sans-serif;
     text-align:justify;
+}
+
+label {
+    padding:5px 10px;
+    margin-left:20px;
+}
+
+input {
+    margin:10px 40px;
+}
+
+pre {
+    margin:10px;
+    padding:25px 50px;
+}
+
+#content small {
+    margin-left:360px;
 }
 
 footer {
