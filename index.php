@@ -1,3 +1,4 @@
+<meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?> />
 <?php get_header(); ?>
 <div id="content">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();    //loop starting point ?>

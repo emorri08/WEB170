@@ -9,11 +9,12 @@ Description: Created in the process of learning how to create Wordpress themes
 Author: E. Boyd
 http://eleanorboyd.com
 -->
+        <meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?> />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <meta name="viewport" content="width=device-width" />
         <meta name="robots" content="noindex,nofollow" />
         <meta name="keywords" content="Morrison Family Blog and Photo Gallery" />
-                <title><?=$title?></title>
+                <title><?php get_my_title_tag(); ?></title>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="script.js"></script>
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all"/>

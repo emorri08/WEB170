@@ -10,7 +10,7 @@
                     <?php echo $children; ?>    
                 </ul>
         </div>
-<!-- END SUB MENU -->
+<!-- END -->
 <!-- quote -->
 
 <?php if (get_post_meta($post->ID, 'Quote', true)) : #this checks to see if there is a quote ?>
@@ -18,6 +18,11 @@
 <blockquote><?php echo get_post_meta($post->ID, 'Quote', true); ?></blockquote>
 
 <?php endif; ?>
-<!-- end quote -->
+<!-- end -->
+        
+<!-- Dynamic Sidebar -->
+        <?php dynamic_sidebar(1); ?>
+<!-- end -->
+        
     </div>
 </aside>
