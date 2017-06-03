@@ -28,8 +28,8 @@ http://eleanorboyd.com
                 <h2 id="mainHeadline" class="headline">Family Photo Gallery &amp; Blog</h2>
 
 <!--begin navigation-->
-    <!--          
-                <div id="navigation">
+             
+                 <!--<div id="navigation">
                 <ul id="main-nav">
                         <li class="navigation">
                             <a class="nav" href="home">Home</a>
