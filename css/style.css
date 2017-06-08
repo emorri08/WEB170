@@ -1,1 +1,350 @@
+/* css reset */
+* {
+    padding:0;
+    margin:0;
+}
 
+html {
+    background-color:darkslategrey;
+    font-family:'arial', sans-serif;
+}
+
+body {
+    width:90%;
+    background-color:antiquewhite;
+    margin:auto;
+    padding:15px;
+}
+
+#morrison {
+    width:600px;
+    margin:auto;
+    padding:50px 50px 50px 100px;
+    padding-top:50px;
+}
+
+#content {
+    background-color:white;
+    width:800px;
+    margin:auto;
+    margin-top:100px;
+    margin-bottom:100px;
+    border-radius:40px;
+    font-family:'arial', sans-serif;
+}
+
+#sidebar {
+    background-color:white;
+    width:700px;
+    padding:50px;
+    margin:auto;
+    margin-bottom:50px;
+    border-radius:40px;
+    font-family:'arial', sans-serif;
+}
+
+#mainHeadline {
+    margin:10px 25px;
+    font-family:'arial', sans-serif;
+    text-align:center;
+}
+
+#headline {
+    margin:30px;
+    padding:25px 20px 5px 20px;
+}
+
+#mainContent {
+    font-family:'arial', sans-serif;
+    font-family:'arial', sans-serif;   
+}
+
+#subHeadline {
+    margin:10px 25px;
+    font-family:'arial', sans-serif;
+    clear:both;
+}
+
+#paragraphOne {
+    font-family:'arial', sans-serif;
+    margin:10px;
+    padding:15px;
+    text-align:justify;
+}
+
+#paragraphTwo {
+    font-family:'arial', sans-serif;
+    margin:10px;
+    padding:15px;
+    text-align:justify;
+}
+
+#content article.post-excerpt {
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+#name {
+    margin:10px 25px;
+}
+
+#select-choice {
+    margin:10px 20px;
+}
+
+#textarea {
+    margin:10px 20px;
+}
+
+#checkbox {
+    margin:10px 30px;
+}
+
+
+
+/* featured image styles */
+
+#content img.featured {
+    margin-bottom:10px;
+}
+
+/* end featured image styles */
+
+/* thumbnail image styles */
+
+#content img.wp-post-image {
+    
+}
+
+#content img.attachment-thumbnail {
+    float:left;
+    margin:5px 20px 0px 0px;
+}
+
+#content img.attachment-medium {
+    
+}
+
+#content img.attachment-large {
+    
+}
+
+#content img.attachment-full {
+    
+}
+
+/* end thumbnail styles */
+
+img.bannerImage {
+    width:100%;
+    margin-top:50px;
+}
+
+img.banner {
+    width:100%;
+}
+
+h1 {
+    padding:20px;
+}
+
+h2 {
+    padding:20px;
+}
+
+h3 {
+    padding:20px;
+}
+
+h4 {
+    padding:5px 10px;
+    margin-left:20px;
+}
+
+p {
+    padding:20px;
+}
+
+ol {
+    
+}
+
+ul {
+   
+}
+
+li {
+    
+}
+
+blockquote {
+    width:500px;
+    height:auto;
+    border:1px solid grey;
+    box-shadow:2px 2px 6px grey;
+    padding:20px;
+    margin:auto;
+    font-family:'arial', sans-serif;
+    text-align:justify;
+}
+
+label {
+    padding:5px 10px;
+    margin-left:20px;
+}
+
+input {
+    margin:10px 40px;
+}
+
+pre {
+    margin:10px;
+    padding:25px 50px;
+}
+
+#content small {
+    margin-left:360px;
+}
+
+footer {
+    font-family:'arial', sans-serif;
+    text-align:center;
+}
+
+footer p {
+    font-family:'arial', sans-serif;
+}
+
+footer a {
+    font-family:'arial', sans-serif;
+}
+
+footer small {
+    font-family:'arial', sans-serif;
+}
+
+/* footer navigation */
+
+#foot-nav {
+    display:none;
+}
+
+/* NAVIGATION STYLES */
+
+div.menu-main-menu-container {
+    background-color:white;
+    
+    width:98%;
+    margin:auto;
+}
+
+#menu-main-menu {
+    position:relative;
+}
+
+#menu-main-menu > li {
+    display:inline-block;
+    
+}
+
+#menu-main-menu > li > a {
+    display:block;
+    color:midnightblue;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+#menu-main-menu > li > a:hover {
+    color:chartreuse;
+    background-color:midnightblue;
+}
+
+#menu-main-menu ul.sub-menu {
+    display:none;
+    position:absolute;
+    
+    list-style-type:none;
+}
+
+#menu-main-menu li:hover ul.sub-menu {
+    display:block;
+}
+
+ul.sub-menu li {
+    padding:10px 5px;
+    background-color:white;
+}
+
+ul.sub-menu li a {
+    width:100%;
+    color:midnightblue;
+    padding:10px 15px;
+}
+
+ul.sub-menu li a:hover {
+    color:chartreuse;
+    background-color:midnightblue;
+}
+
+/*footer nav - blog categories */
+
+#sub-menu {
+    background-color:white;
+    padding-top:75px;
+    padding-bottom:120px;
+    width:100%;
+}
+
+ul.sub-menu-items {
+    position:relative;
+}
+
+ul.sub-menu-items > li {
+    display:inline-block;
+}
+
+ul.sub-menu-items > li > a {
+    display:block;
+    padding:20px;
+}
+
+ul.sub-menu-items > li > a:hover {
+    color:chartreuse;
+    background-color:midnightblue;
+}
+
+ul.sub-menu-items ul.children {
+    display:none;
+    position:absolute;
+}
+
+ul.sub-menu-items li:hover ul.children {
+    display:block;
+    width:100px;
+    list-style-type:none;
+}
+
+ul.sub-menu-items li {
+    padding:20px;
+}
+
+ul.children {
+    margin:10px;
+}
+
+ul.children li a {
+    padding:20px;
+}
+
+ul.children > li > a:hover {
+    background-color:midnightblue;
+    color:chartreuse;
+}
+
+
+/* END NAVIGATION STYLES */
+
+
+/* RESPONSIVE STYLES */
