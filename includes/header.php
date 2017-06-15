@@ -8,12 +8,11 @@ Theme Name: boyd-sp17-web170
 Description: Created in the process of learning how to create Wordpress themes
 Author: E. Boyd
 http://eleanorboyd.com
--->
-        <meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?> />
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+-->     
         <meta name="viewport" content="width=device-width" />
         <meta name="robots" content="noindex,nofollow" />
         <meta name="keywords" content="Morrison Family Blog and Photo Gallery" />
+        <meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>"/>
                 <title><?php get_my_title_tag(); ?></title>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="script.js"></script>
@@ -58,7 +57,15 @@ http://eleanorboyd.com
                 </div>-->
 
 <!--end navigation-->
+                                                         
+<?php print cssmenumaker_pro_print_menu(171); ?>
+                                                         
+                                                         
+<!--                                                          
+
 <?php wp_nav_menu(array('theme_location' => 'main-menu', 'menu' => 'main-menu', 'menu_class' => 'menu')); ?>
+                                                         
+                                                         -->
     
     
     
