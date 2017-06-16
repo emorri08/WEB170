@@ -57,7 +57,7 @@ http://eleanorboyd.com
                 </div>-->
 
 <!--end navigation-->
-<!-- temporary functioning navigation --- in place while I am troubleshooting my jquery toggle nav...it flickers instead of dropping and staying down...but I am working on it!-->                                                         
+<!-- temporary functioning navigation - in place while I am troubleshooting my jquery toggle nav...it flickers instead of dropping and staying down...but I am working on it!-->                                                         
 <?php print cssmenumaker_pro_print_menu(171); ?>
                                                          
                                                          
