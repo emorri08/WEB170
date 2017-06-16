@@ -15,8 +15,11 @@ http://eleanorboyd.com
         <meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>"/>
                 <title><?php get_my_title_tag(); ?></title>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="script.js"></script>
+            <script src="http://eleanorboyd.com/web170/project/wordpress-sp17/wp-content/themes/boyd-sp17-web170/script.js"></script>
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all"/>
+        <link rel="stylesheet" href="http://eleanorboyd.com/web170/project/wordpress-sp17/wp-content/themes/boyd-sp17-web170/nav.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Shrikhand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
         <?php wp_head(); ?>
     </head>
 <!-- end of invisible content -->
@@ -57,15 +60,10 @@ http://eleanorboyd.com
                 </div>-->
 
 <!--end navigation-->
-<!-- temporary functioning navigation - in place while I am troubleshooting my jquery toggle nav...it flickers instead of dropping and staying down...but I am working on it!-->                                                         
-<?php print cssmenumaker_pro_print_menu(171); ?>
-                                                         
-                                                         
-<!--                                                          
 
 <?php wp_nav_menu(array('theme_location' => 'main-menu', 'menu' => 'main-menu', 'menu_class' => 'menu')); ?>
                                                          
-                                                         -->
+                                                       
     
     
     
