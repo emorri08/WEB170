@@ -1,69 +1,5 @@
-div.menu-main-menu-container {
-    background-color:white;
-    
-    width:98%;
-    margin:auto;
-}
-
-#menu-main-menu {
-    position:relative;
-    width:100%;
-    border-top:1px solid #efefef;
-    border-bottom:3px solid #e7e7e7;
-}
-
-#menu-main-menu > li {
-    display:inline-block; 
-}
-
-#menu-main-menu > li > a {
-    display:block;
-    color:#d80041;
-    font-family:'Playfair Display', serif;
-    font-size:18px;
-    padding-top:15px;
-    padding-bottom:15px;
-    padding-left:15px;
-    padding-right:15px;
-}
-
-#menu-main-menu > li > a:hover {
-    color:#fff;
-    background-color:#d80041;
-}
-
-#menu-main-menu ul.sub-menu {
-    display:none;
-    position:absolute;
-    list-style-type:none;
-}
-
-#menu-main-menu li:hover ul.sub-menu {
-    display:block;
-}
-
-ul.sub-menu li {
-    padding:10px 5px;
-    background-color:#fff;
-    font-family:'Playfair Display', serif;
-    font-size:16px;
-}
-
-ul.sub-menu li a {
-    width:100%;
-    color:#d80041;
-    padding:10px 15px;
-    font-family:'Playfair Display', serif;
-    font-size:16px;
-}
-
-ul.sub-menu li a:hover {
-    color:#fff;
-    background-color:#d80041;
-}
-
-/*footer nav - blog categories */
-
+/* -------------------- FOOTER NAV - BLOG CATEGORIES -------------------- */
+/* -------------------- FOOTER NAVIGATION STYLES ------------------------ */
 #sub-menu {
     background-color:#fff;
     padding-top:75px;
@@ -133,5 +69,195 @@ li.dog-item {
 #menu-item-47 {
     border-top:3px solid #e7e7e7;
 }
+/* -------------------- END FOOTER NAVIGATION STYLES ------------------ */
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/* --- separated for legibility --- */
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/* -------------------- RESPONSIVE NAVIGATION STYLES ------------------ */
 
-/* END NAVIGATION STYLES */
+
+
+
+/* -------------------- LARGER SCREEN NAV STYLES ---------------------- */
+
+/* -------------------- desktop, larger tablets ----------------------- */
+@media all and (min-width:651px){
+    
+    #toggle {
+        display:none;
+    }
+    
+    div.menu-main-menu-container {
+        background-color:#fff;
+        width:100%;
+        margin:auto;
+    }
+
+    #menu-main-menu {
+        position:relative;
+        width:100%;
+        border-top:1px solid #efefef;
+        border-bottom:3px solid #e7e7e7;
+    }
+
+    #menu-main-menu > li {
+        display:inline-block; 
+    }
+
+    #menu-main-menu > li > a {
+        display:block;
+        color:#d80041;
+        font-family:'Playfair Display', serif;
+        font-size:18px;
+        padding-top:15px;
+        padding-bottom:15px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+    #menu-main-menu > li > a:hover {
+        color:#fff;
+        background-color:#d80041;
+    }
+
+    #menu-main-menu ul.sub-menu {
+        display:none;
+        position:absolute;
+        list-style-type:none;
+    }
+
+    #menu-main-menu li:hover ul.sub-menu {
+        display:block;
+    }
+
+    ul.sub-menu li {
+        padding:10px 5px;
+        background-color:#fff;
+        font-family:'Playfair Display', serif;
+        font-size:16px;
+    }
+
+    ul.sub-menu li a {
+        width:100%;
+        color:#d80041;
+        padding:10px 15px;
+        font-family:'Playfair Display', serif;
+        font-size:16px;
+    }
+
+    ul.sub-menu li a:hover {
+        color:#fff;
+        background-color:#d80041;
+    }
+    
+}
+/* ----------------- END LARGER SCREEN NAV STYLES -------------------- */
+
+
+
+
+
+
+/* --- separated for legibility --- */
+
+
+
+
+
+
+/* -------------------- SMALLER SCREEN NAV STYLES -------------------- */
+
+/* --------------- smaller sized tablet, phone, etc... --------------- */
+@media all and (max-width:650px) {
+    
+    #toggle {
+        display:block;
+    }
+    
+    div.menu-main-menu-container {
+        background-color:#fff;
+        width:100%;
+        margin:auto;
+    }
+
+    #menu-main-menu {
+        position:relative;
+        width:100%;
+        border-top:1px solid #efefef;
+        border-bottom:3px solid #e7e7e7;
+    }
+
+    
+    #menu-main-menu > li {
+        display:block; 
+    }
+    
+    #menu-main-menu > li > a {
+        display:block;
+        color:#d80041;
+        font-family:'Playfair Display', serif;
+        font-size:18px;
+        padding-top:15px;
+        padding-bottom:15px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    
+    #menu-main-menu ul.sub-menu {
+        display:block;
+        position:absolute;
+        list-style-type:none;
+    }
+    
+    ul.sub-menu li {
+        padding:10px 5px;
+        background-color:#fff;
+        font-family:'Playfair Display', serif;
+        font-size:16px;
+    }
+
+    ul.sub-menu li a {
+        width:100%;
+        color:#d80041;
+        padding:10px 15px;
+        font-family:'Playfair Display', serif;
+        font-size:16px;
+    }
+    
+    #foot-nav {
+        display:none;
+    }
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+}
+/*------------------- END SMALLER SCREEN NAV STYLES ------------------ */
+
+
+
+/* -------------------- END RESPONSIVE NAV STYLES -------------------- */
+
+
+
+/* ----------------------- END NAVIGATION STYLES --------------------- */
+
