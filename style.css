@@ -318,27 +318,30 @@ footer small {
     font-family:'arial', sans-serif;
 }
 
-/* footer navigation */
 
-#foot-nav {
-    display:none;
-}
+
+
 
 /* RESPONSIVE STYLES */
 
 /* large screen styles -- desktop */
-@media all and (min-width:900px) {
+@media all and (min-width:651px) {
+    
+    
+
+  
+    
+    
     
 }
 
-
-/* medium screen styles -- tablet, larger phones */
-@media all and (min-width:600) and (max-width:899) {
-    
-}
 
 
 /* small screen styles -- smaller phones */
-@media all and (max-width:599) {
+@media all and (max-width:650px) {
     
+    
+    
+    
+  
 }
